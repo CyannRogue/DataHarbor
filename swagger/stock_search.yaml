@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Stock Search API
+  version: 1.0.0
+  description: API for searching stock information.
+paths:
+  /api/finance/search:
+    get:
+      summary: Search for stock information
+      parameters:
+        - in: query
+          name: query
+          schema:
+            type: string
+          required: true
+          description: Search term for the stock
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Server Error

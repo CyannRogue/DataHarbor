@@ -1,0 +1,25 @@
+openapi: 3.0.0
+info:
+  title: Quotes API
+  version: 1.0.0
+  description: API for fetching quotes for specified symbols.
+paths:
+  /api/finance/quote:
+    get:
+      summary: Get quotes for specified symbols
+      parameters:
+        - in: query
+          name: symbol
+          schema:
+            type: string
+          required: true
+          description: Comma-separated stock symbols
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+        '500':
+          description: Server Error

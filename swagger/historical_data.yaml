@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  title: Historical Data API
+  version: 1.0.0
+  description: API for fetching historical data for a given symbol.
+paths:
+  /api/finance/history:
+    get:
+      summary: Get historical data for a symbol
+      parameters:
+        - in: query
+          name: symbol
+          schema:
+            type: string
+          required: true
+          description: Stock symbol
+        - in: query
+          name: interval
+          schema:
+            type: string
+          required: true
+          description: Interval of historical data
+        - in: query
+          name: diffandsplits
+          schema:
+            type: string
+          required: false
+          description: Include diff and splits data
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Server Error

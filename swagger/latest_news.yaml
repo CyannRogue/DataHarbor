@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: Latest News API
+  version: 1.0.0
+  description: API for fetching the latest financial news.
+paths:
+  /api/finance/news:
+    get:
+      summary: Get latest financial news
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+        '500':
+          description: Server Error

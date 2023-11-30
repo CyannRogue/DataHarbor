@@ -1,0 +1,18 @@
+openapi: 3.0.0
+info:
+  title: SEC Form 4 Filings API
+  version: 1.0.0
+  description: API for retrieving SEC Form 4 filings data.
+paths:
+  /api/finance/form4:
+    get:
+      summary: Get SEC Form 4 filings
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: object
+        '500':
+          description: Server Error

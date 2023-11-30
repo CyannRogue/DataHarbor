@@ -1,0 +1,50 @@
+openapi: 3.0.0
+info:
+  title: News by Symbol API
+  version: 1.0.0
+  description: API for fetching news related to specific stock symbols.
+paths:
+  /api/finance/news/symbol:
+    get:
+      summary: Get news by stock symbol
+      parameters:
+        - in: query
+          name: symbol
+          schema:
+            type: string
+          required: true
+          description: Comma-separated stock symbols
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+        '500':
+          description: Server Error
+openapi: 3.0.0
+info:
+  title: News by Symbol API
+  version: 1.0.0
+  description: API for fetching news related to specific stock symbols.
+paths:
+  /api/finance/news/symbol:
+    get:
+      summary: Get news by stock symbol
+      parameters:
+        - in: query
+          name: symbol
+          schema:
+            type: string
+          required: true
+          description: Comma-separated stock symbols
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+        '500':
+          description: Server Error
