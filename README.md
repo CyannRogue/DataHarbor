@@ -26,18 +26,25 @@ DataHarbor is a Node.js application designed to aggregate and serve a variety of
 ### Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/yourusername/DataHarbor.git
    ```
+
 2. Navigate to the project directory:
+
    ```sh
    cd DataHarbor
    ```
+
 3. Install NPM packages:
+
    ```sh
    npm install
    ```
+
 4. Create a `.env` file in the root directory and add the necessary environment variables:
+
    ```
    MBOUM_API_KEY=your_mboum_api_key
    ```
@@ -45,6 +52,7 @@ DataHarbor is a Node.js application designed to aggregate and serve a variety of
 ### Usage
 
 Start the server:
+
 ```sh
 npm start
 ```

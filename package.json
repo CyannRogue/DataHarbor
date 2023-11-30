@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/dataharbor.git"
+    "url": "git+https://github.com/CyannRogue/DataHarbor.git"
   },
   "keywords": [
     "finance",
@@ -21,9 +21,9 @@
   "author": "Your Name",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yourusername/dataharbor/issues"
+    "url": "https://github.com/CyannRogue/DataHarbor/issues"
   },
-  "homepage": "https://github.com/yourusername/dataharbor#readme",
+  "homepage": "https://github.com/CyannRogue/DataHarbor#",
   "dependencies": {
     "@types/swagger-ui-express": "^4.1.6",
     "axios": "^1.6.2",
